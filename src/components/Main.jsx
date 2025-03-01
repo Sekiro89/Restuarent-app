@@ -1,5 +1,5 @@
 import React , {useReducer} from 'react'
-import {HashRouter,Route, Routes, useNavigate} from 'react-router-dom'
+import {Route, Routes, useNavigate} from 'react-router-dom'
 import Header from './Header'
 import Booking from './Booking'
 import ConfirmBooking from './ConfirmBooking'
@@ -45,7 +45,6 @@ const Main=()=>{
         }
     }
     return(
-        <HashRouter>
         <main className='main'>
             <Routes>
     <Route path='/' element={<Header />} />
@@ -62,7 +61,6 @@ const Main=()=>{
     <Route path='/confirmed' element={<ConfirmBooking />}/>
 </Routes>
         </main>
-        </HashRouter>
     )
 }
 
