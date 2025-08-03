@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import '../assets/Booking.css'
 const BookingForm=(props)=>{
     const [date,setDate]=useState("");
     const [times,setTimes]=useState("");
@@ -35,7 +35,7 @@ const BookingForm=(props)=>{
                             </select>
                             <div>
                                 <label htmlFor='book-guests'>Number of Guests</label>
-                                <input id="book-guests" min="1" value={guests} onChange={(e)=>setGuests(e.target.value)}/>
+                                <input id="book-guests" min="1"type="number" value={guests} onChange={(e)=>setGuests(e.target.value)}/>
                             </div>
                             <div>
                                 <label htmlFor='book-occassion'>Occassion:</label>
