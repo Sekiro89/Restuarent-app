@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../images/Logo.svg";
 import Menu from './ResMenu.jsx';
-
+import "../assets/Nav.css"
 const Nav=()=>{
     const[menuOpen, setMenuopen]=useState(false)
     const toggleMenu=()=>{
